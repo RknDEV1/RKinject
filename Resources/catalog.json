@@ -1,0 +1,37 @@
+{
+  "packages": [
+    {
+      "id": "wallpaper.aurora",
+      "name": "Aurora Gradient",
+      "kind": "wallpaper",
+      "version": "1.1",
+      "size": 30533,
+      "author": "Raki Samples",
+      "summary": "A soft teal-to-violet gradient wallpaper.",
+      "url": "bundle://raki-aurora.zip",
+      "sha256": "6e3e3073496e40cb55f93d903cea296ec39112f9625b18aafed8a34347efe4fd"
+    },
+    {
+      "id": "patch.compact-lists",
+      "name": "Compact Lists",
+      "kind": "patch",
+      "version": "1.0",
+      "size": 561,
+      "author": "Raki Samples",
+      "summary": "Sample patch bundle with a plist configuration.",
+      "url": "bundle://raki-compact-lists.zip",
+      "sha256": "495d827f5f8cf473a64205cb73db9624ff76bd5a5a911967a490183c8cd8d853"
+    },
+    {
+      "id": "dialer.midnight",
+      "name": "Midnight Dialer",
+      "kind": "dialerTheme",
+      "version": "2.0",
+      "size": 190,
+      "author": "Raki Samples",
+      "summary": "Dark dialer theme with indigo keys.",
+      "url": "bundle://raki-midnight-dialer.zip",
+      "sha256": "3ca2a590a0831518fb5f946018c54f94a5c90a68e16e9befe5a641e4bf73121f"
+    }
+  ]
+}

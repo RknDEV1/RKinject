@@ -1,0 +1,46 @@
+name: Raki
+options:
+  bundleIdPrefix: com.raki
+  deploymentTarget:
+    iOS: "18.0"
+packages:
+  ZIPFoundation:
+    url: https://github.com/weichsel/ZIPFoundation
+    from: 0.9.19
+targets:
+  Raki:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      - path: Resources
+    dependencies:
+      - package: ZIPFoundation
+    info:
+      path: Config/Info.plist
+      properties:
+        CFBundleDisplayName: Raki
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [en, pt-BR, vi, zh-Hans]
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIFileSharingEnabled: true
+        LSSupportsOpeningDocumentsInPlace: true
+        ITSAppUsesNonExemptEncryption: false
+        # Identificadores de App Group a listar na aba Sources (exige o entitlement correspondente).
+        RakiAppGroups: []
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.raki.app
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
